@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,label{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Employee Interests Survey Form</h1>
+    <form>
+        <div style="text-align:center"><label>Enter your name: </label><input type="text" id="name" name="name"></div><br>
+        <div style="text-align:center"><label>Enter your Department: </label><input type="text" id="dept" name="dept"></div><br>
+        <div style="text-align:center"><label>Tell us a little about yourself:</label><textarea rows="4" cols="50"></textarea></div>
+        <div style="text-align:center"><label>Do you exercise at home? </label>
+            <input type="radio" id="yes" name="exercise" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="exercise" value="no">
+            <label for="no">No</label>
+        </div><br>
+        <div style="text-align:center"><label>How do you like to read your favourite topics?</label><br><br>
+        <div><input type="checkbox" id="Books" name="type1" value="Books">
+        <label for="Books"> Books</label>
+        <input type="checkbox" id="Online" name="Type2" value="Online">
+        <label for="Online"> Online Resources</label>
+        <input type="checkbox" id="Phone" name="Type3" value="Phone">
+        <label for="Phone"> Phone Apps</label>
+        <input type="checkbox" id="Magzine" name="Type4" value="Magzine">
+        <label for="Magzine"> Magzines</label>
+        </div>
+        </div><br>
+        <div style="text-align:center"><label for="genre">What genre of movies do you like? </label>
+            <select id="genre" name="genre">
+                <option value="Horror">Horror</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romantic">Romantic</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Crime">Crime</option>
+            </select>
+        </div><br>
+        <div style="text-align:center"><button type="submit" value="Submit">Submit form</button></div>
+      </form>
+</body>
+</html>
