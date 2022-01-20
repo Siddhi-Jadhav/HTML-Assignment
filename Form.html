@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table{border: 1px; margin-left: auto; margin-right: auto;box-flex-group: grey;}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Employee Joining Form</h1>
+    <br>
+    <form action="Result.html" method="post">
+        <table>
+            <tr>
+                <td><div><label><b>Enter your first name: </b></label><input type="text" id="name" name="name" placeholder="Your First Name" required></div></td>
+                <td><div><label><b>Enter your middle name: </b></label><input type="text" id="name" name="name" placeholder="Your Father's Name"required></div></td>
+                <td><div><label><b>Enter your last name: </b></label><input type="text" id="name" name="name" placeholder="Your Surame" required></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label><b>Enter your Address: </b></label><input type="text" id="name" name="name"></div></td>
+                <td><div style="text-align:center"><label for="status"><b>Select state: </b></label>
+                    <select id="state" name="state">
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Goa">Goa</option>
+                    </select>
+                </div></td>
+                <td><div style="text-align:center"><label><b>Enter pin code: </b></label></label><input type="number" id="name" name="name"></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label><b>Mobile: </b></label><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></div></td>
+                <td><div style="text-align:center"><label><b>Gender: </b></label>
+                    <input type="radio" id="M" name="gender" value="M" required>
+                    <label for="M">Male</label>
+                    <input type="radio" id="F" name="gender" value="F">
+                    <label for="F">Female</label>
+                </div></td>
+                <td>
+                    <div style="text-align:center"><label for="status"><b>Marrital status: </b></label>
+                        <select id="status" name="status" required>
+                            <option value="Married">Married</option>
+                            <option value="Single">Single</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label for="email"><b>Enter your email:</b></label><input type="email" id="email" name="email" required></div></td>
+                <td><div style="text-align:center"><label for="email"><b>Birthdate:</b></label><input type="date" id="Birthdate" name="Birthdate" required></div></td>
+                <td>
+                    <div style="text-align:center"><label for="blood"><b>Blood group: </b></label>
+                        <select id="blood" name="blood">
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O+">O+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O-">O-</option>
+                            <option value="Bombay">Bombay</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center"><b>Course</b></div></td>
+                <td><div style="text-align:center"><b>College and Board/University</b></div></td>
+                <td><div style="text-align:center"><b>Percentage</b></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label>Degree</label></td></div>
+                <td><div style="text-align:center"><input type="text" id="name" name="name" placeholder="College name with university"></div></td>
+                <td><div style="text-align:center"><input type="number" id="name" name="name" placeholder="Percentage"></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label>12<sup>th</sup>/Diploma</label></td></div>
+                <td><div style="text-align:center"><input type="text" id="name" name="name" placeholder="College name with Board"></td>
+                <td><div style="text-align:center"><input type="number" id="name" name="name" placeholder="Percentage"></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label>10<sup>th</sup</label></td></div>
+                <td><div style="text-align:center"><input type="text" id="name" name="name" placeholder="School name with Board"></div></td>
+                <td><div style="text-align:center"><input type="number" id="name" name="name" placeholder="Percentage"></div></td>
+            </tr>
+            <tr>
+                <td><div style="text-align:center"><label><b>Your Favourite programming language?</b></label></div></td>
+                <td colspan="2" style="text-align: center;"> 
+                    <div>
+                    <input type="checkbox" id="C" name="type1" value="C">
+                    <label for="C"> C</label>
+                    <input type="checkbox" id="Cpp" name="Type2" value="Cpp">
+                    <label for="Cpp"> Cpp</label>
+                    <input type="checkbox" id="Java" name="Type3" value="Java">
+                    <label for="Java"> Java</label>
+                    <input type="checkbox" id="Python" name="Type4" value="Python">
+                    <label for="Python"> Python</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><label><b>Preferred Work Location:</b></label> </td>
+                <td colspan="2">
+                    <div style="text-align:center">
+                        <select id="work" name="location" required>
+                            <option value="Pune">Pune</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><div style="text-align:center"><button type="submit" value="Submit">Submit</button></div></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
